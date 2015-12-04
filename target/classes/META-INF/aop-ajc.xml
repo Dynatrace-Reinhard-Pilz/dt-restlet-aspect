@@ -1,0 +1,8 @@
+<aspectj>
+	<aspects>
+		<aspect name="com.dynatrace.restlet.aspects.RestletAspect" />
+	</aspects>
+	<weaver options="-Xset:weaveJavaxPackages=true">
+		<include within="org.restlet..*" />
+	</weaver>
+</aspectj>
